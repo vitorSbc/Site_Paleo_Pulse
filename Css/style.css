@@ -154,7 +154,11 @@ html, body{
     box-shadow: 0px 5px 10px #010C10;
     
 }
-
+@media screen and (max-width:710px) {
+    .titulosMarcadores{
+        font-size: 80px;
+    }    
+}
 /*Inicio das Classes da parte "Categorias" da página*/
 .IconesCategorias{  /*Parte do "Retangulo" cinza dos icones*/
     display: inline-block;
