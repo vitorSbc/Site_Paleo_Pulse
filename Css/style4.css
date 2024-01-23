@@ -1,0 +1,41 @@
+
+.Conteudo1{
+    background-image: url(../Pictures/TheFight/Treta2.0.jpg);
+    background-position: center;
+}
+
+.textos{
+    position: static;
+    float: right;
+    text-align: right;
+    max-width: 800px;
+    margin: 300px 0px;   
+}
+
+.tituloConteudoDestaque{
+    color: #D9FECC;
+    text-shadow: 0px 4px 10px #1D3C48;
+}
+
+.black{
+    height: 100%;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+@media screen and (max-width:820px) {
+    .Conteudo1{
+        background-position:  left;
+    }
+
+    .textos{
+        margin: 75% 0px 0px 0px;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .textos{
+        margin: 100% 0px 0px 0px;
+    }
+
+}

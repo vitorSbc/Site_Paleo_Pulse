@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-html, body{
-    height:100%;
-    background-color: #D9D9D9;
+html,
+body {
+    background-color: white;
     font-family: 'League Spartan', sans-serif;
 }
 .clear{
@@ -24,7 +24,7 @@ html, body{
 .menu{
     position: absolute;
     right: 10px;
-    top:80px;
+    top:70px;
     padding: 10px;
     color: #FCB742;
     font-size: 40px; 
@@ -74,19 +74,19 @@ html, body{
 .Conteudo1{
     width: 100%;
     height: 100%;
-    background-image:url(../Pictures/Baleia\ Colossau4.jpeg);
+    background-image:url(../Pictures/Perucetus/Baleia\ Colossau4.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    box-shadow: 0px 7px 10px rgba(6, 87, 76, 0.74);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.74);
 
 }
 .tituloConteudoDestaque{
     width: 400px;
     color: #00C1EA;
     text-shadow: 5px 5px 5px rgba(15, 47, 134, 0.575);
-    font-family: Julius Sans One;
-    font-size: 45px;
+    font-family: "Julius Sans One";
+    font-size: 75px;
     letter-spacing: 2.75px;
 }
 .textos{
@@ -99,25 +99,24 @@ html, body{
     color: #FCB742;
     margin: 25px 0px 0px 20px;
     font-size: 28px;
-    font-family: Ledger;
     text-decoration: none;
     text-shadow:0px 2px 6px #FCB742;
 }
 
 @media screen and (max-width:1219px) {
     .Conteudo1{
-        background-image: url(../Pictures/Baleia\ Colossau-2.jpeg);
+        background-image: url(../Pictures//Perucetus/Baleia\ Colossau-2.jpeg);
     }
 
     .tituloConteudoDestaque{
         width: 100%;
-        font-size: 45px;
+        font-size: 75px;
     
     }
 
     .textos{
         position: relative;
-        top: 230px;
+        top: 300px;
         width: 800px;
         text-align: center;
     }
@@ -137,7 +136,7 @@ html, body{
     }
 
     .tituloConteudoDestaque{
-        font-size: 35px;
+        font-size: 60px;
     }
 }
 /*Fim das Classes do Conteudo Em Destaque no inicio da página*/
@@ -211,18 +210,24 @@ html, body{
     text-align: center;
 }
 
+.noticias img{
+    max-width: 400px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
 .primeiraNoticia{
-    background: linear-gradient(269deg, rgba(144, 200, 218, 0.00) 21.76%, rgba(45, 151, 184, 0.00) 43.39%, rgba(116, 109, 201, 0.38) 60.31%, rgba(127, 125, 154, 0.88) 77.44%);
+    background: linear-gradient(270deg, rgba(255, 214, 0, 0.00) 9.95%, rgba(255, 236, 99, 0.59) 47.76%, #FF873F 66.41%, #FF6A41 77.55%);
 }
 
 .segundaNoticia{
-    background: linear-gradient(90deg, rgba(217, 217, 217, 0.00) 0.82%, rgba(157, 191, 185, 0.35) 32.33%, rgba(104, 163, 156, 0.66) 73.66%, rgba(45, 142, 164, 0.78) 96.9%);
+    background: linear-gradient(90deg, rgba(19, 214, 178, 0.01) 0.82%, rgba(54, 255, 219, 0.29) 28.59%, #5AADFF 77.68%, #0A5966 100%);
 } 
 .primeiraNoticia img {
     float: left;    
     width: 450px;
 }
-.segundaNoticia img{
+.segundaNoticia img , .quartaNoticia img{
     float: right;
 }
 .terceiraNoticia img{
@@ -232,7 +237,7 @@ html, body{
 
 .noticias.terceiraNoticia{
     margin-bottom: 77px;
-    background: linear-gradient(269deg, rgba(158, 180, 22, 0.00) 24.82%, rgba(28, 159, 201, 0.00) 43.39%, rgba(123, 134, 147, 0.61) 59.21%, rgba(7, 17, 102, 0.58) 77.44%);
+    background: linear-gradient(269deg, rgba(193, 255, 91, 0.00) 12.22%, #9BE424 55.14%, #6EA219 91.8%);
 }    
 
 /*Classes do texto das noticias*/
@@ -240,7 +245,7 @@ html, body{
     width: 30%;
     text-align: center;
     float: right;
-    margin-top: 3%;
+    margin-top: 4%;
     margin-right: 20%;
 }
 
@@ -248,11 +253,12 @@ html, body{
     color: #010C10;
     font-weight: normal;
     font-size: 50px;
-    font-family: Julius Sans One;
+    font-family: "Julius Sans One";
 }
 
 .textosNoticias p {
     margin-top: 15px;
+    margin-bottom: 15px;
     letter-spacing: 2px;
     line-height: 23px;
     font-family: 'League Spartan', sans-serif;
@@ -264,7 +270,7 @@ html, body{
     text-decoration:none;
     color: #FCB742;
     font-size: 30px;
-    text-shadow:0px 1px 8px #000000;
+    text-shadow:0px 1px 5px #FCB742;
     font-family: 'League Spartan', sans-serif;
 
 }
@@ -275,7 +281,7 @@ html, body{
     }
 
     .noticias.terceiraNoticia{
-        height:500px;
+        height:600px;
     }
     
     .noticias img{
@@ -283,7 +289,6 @@ html, body{
         width: 400px;
         display: block;
         margin:0 auto;
-        border: 5px solid rgba(115, 116, 151, 0.39);
     }
     .textosN{
         width: 100%;
@@ -363,6 +368,7 @@ html, body{
 #ConteudoDestaque{
     width: 100%;
     height: 750px;
+    
 }
 
 @media screen and (max-width:1219px) {
@@ -375,23 +381,16 @@ html, body{
 /*Id da área das Noticias*/
 #noticias{
     width: 100%;
-    height: 1600px;
     margin-top: 35px;
 }
 
-@media screen and (max-width:1355px) {
-    #noticias{
-        height: 2050px;
-    }
-
-}   
 /*Id do rodape*/
 #rodape{
     width: 100%;
     text-align: center;
     background-color: #010C10;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 70px;
 }
 
 @media screen and (max-width:1355px) {

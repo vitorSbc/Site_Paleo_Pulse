@@ -1,0 +1,45 @@
+
+.Conteudo1{
+    background-image: url(../Pictures/Pyconemosaurus/Pycono-restor.jpg);
+    background-position: center;
+}
+
+.textos{
+    bottom: -250px;
+    width: 60%;
+    left: 20%;
+    text-align: center;
+}
+
+.tituloConteudoDestaque{
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.38);
+    width: 100%;
+    font-size: 75px;
+}
+
+@media screen and (max-width:1303px) {
+    .Conteudo1{
+        background-position: left center;
+    }
+
+    .tituloConteudoDestaque{
+        text-align: center;
+        font-size: 65px;
+    }
+
+}
+
+@media screen and (max-width:820px) {
+   
+    .textos{
+        bottom: -350px;
+        width: 100%;
+        left: 0px;
+    }
+   
+    .tituloConteudoDestaque{
+        text-align: center;
+        font-size: 55px;
+    }
+}
