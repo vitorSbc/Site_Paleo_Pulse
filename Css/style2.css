@@ -55,7 +55,7 @@ body{
     letter-spacing: 1.0px;
 }
 #informacoes p{
-    margin: 10px;
+    margin: 12px;
     text-indent: 20px;
 }
 section > img{
@@ -72,6 +72,7 @@ section > img{
 }
 
 .imgPrincipal img{
+    
     max-width: 1000px;
     width: 100%;
     margin: 30px;
@@ -147,28 +148,28 @@ section > img{
 .outrasNoticias{
     display: inline-block;
     margin: 20px 130px 30px 130px;
-    max-width: 350px;
+    width: 350px;
     
 }
 
 .outrasNoticias img{
-    width: 200px;
+    max-width: 200px;
     max-height: 200px;
+    height:200px;
     border-radius: 40px;
 }
 
 .outrasNoticias  h3{
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     color: #010C10;
     padding: 10px;
     font-family: "Julius Sans One";
 }
 
 .outrasNoticias p{
-    width: 100%;
     font-size: 18px;
-    letter-spacing: 1.2px;
+    letter-spacing: 0.6px;
     line-height: 20px;
     color: #302A1F;
     margin-bottom: 10px;

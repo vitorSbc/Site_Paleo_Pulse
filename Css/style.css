@@ -242,7 +242,7 @@ body {
 
 /*Classes do texto das noticias*/
 .textosN {
-    width: 30%;
+    width: 35%;
     text-align: center;
     float: right;
     margin-top: 4%;
@@ -330,6 +330,19 @@ body {
     .textosNoticias a{
         font-size: 22px;
     }
+}
+/* Classes de formatação do site da notícia */
+.textoImagem{
+    margin: -3% 0px 0px 0px ;
+    color: #7E7E7E;
+    font-size: 19px;
+}
+
+#informacoes h1{
+    text-align: center;
+    font-family: "Julius Sans One";
+    font-size: 50px;
+    margin: 30px;
 }
 /*Id do cabecalho*/
 #cabecalho{     

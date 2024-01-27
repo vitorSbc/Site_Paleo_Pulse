@@ -1,0 +1,28 @@
+
+.Conteudo1{
+    background-image: url(../Pictures/TheFaceofpast/Recostrução2.jpg);
+    background-position: center;
+}
+
+.tituloConteudoDestaque{
+    color:#949492;
+    text-shadow: 0px 3px 5px #7e7e7e;
+    font-size: 80px;
+}
+
+.borda img{
+    border: 10px solid #19323D;
+}
+
+
+@media screen and (max-width:1100px){
+    .Conteudo1{
+        background-image: url(../Pictures/TheFaceofpast/Egipcio_Recostrução2.jpg);
+    }
+
+}
+@media screen and (max-width:540px){
+    .tituloConteudoDestaque{
+        font-size: 70px;
+    }
+}
