@@ -275,7 +275,7 @@ body {
 
 }
 /* Ajustes em relação ao tamanho da tela*/
-@media screen and (max-width:1355px) {
+@media screen and (max-width:1439px) {
     .noticias{
         height: 600px;
     }
@@ -341,8 +341,26 @@ body {
 #informacoes h1{
     text-align: center;
     font-family: "Julius Sans One";
-    font-size: 50px;
+    font-size: 55px;
     margin: 30px;
+}
+
+#informacoes h2{
+    font-family: "Julius Sans One";
+    font-size: 40px;
+    color: #302A1F;
+    margin: 40px 0px;
+}
+
+@media screen and (max-width:600px) {
+    #informacoes h1{
+        font-size: 40px;
+        margin: 30px;
+    }
+    
+    #informacoes h2{
+        font-size: 35px;
+    }
 }
 /*Id do cabecalho*/
 #cabecalho{     
