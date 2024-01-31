@@ -6,7 +6,7 @@
 
 html,
 body {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-family: 'League Spartan', sans-serif;
 }
 .clear{
@@ -161,7 +161,7 @@ body {
 /*Inicio das Classes da parte "Categorias" da página*/
 .IconesCategorias{  /*Parte do "Retangulo" cinza dos icones*/
     display: inline-block;
-    margin: 95px 60px 0px 60px;
+    margin: 95px 8% 0px 8%;
     width: 220px;
 }
 .IconesCategorias img{
@@ -389,7 +389,7 @@ body {
 
 @media screen and (max-width:830px) {
     #categorias{
-        height: 1450px;
+        height: 1150px;
         max-height: 1450px;
     }
 

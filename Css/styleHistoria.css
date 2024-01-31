@@ -3,7 +3,7 @@
 }
 
 .segundaNoticia{
-    background: linear-gradient(90deg, rgba(255, 190, 91, 0.74) 11.23%, #FFAE59 36.03%, #FF992F 69.75%, #C96907 100%);
+    background: linear-gradient(90deg, rgba(247, 204, 140, 0.74) 11.23%, #FFAE59 36.03%, #FF992F 69.75%, #C96907 100%);
 }
 
 .segundaNoticia .textosN , .quartaNoticia .textosN{
@@ -11,6 +11,10 @@
     padding: 1%;
 }
 
+.segundaNoticia a{
+    color: #e0a53f;;
+    text-shadow: 0px 4px 10px #ffa200;;
+}
 
 .noticias.terceiraNoticia{
     background: linear-gradient(269deg, rgba(171, 186, 251, 0.84) 24.73%, #5E73DD 55.14%, #4353A3 91.8%);
@@ -23,3 +27,9 @@
 
 
 
+#noticias > img{
+    margin: 3px 0px;
+    width: 5%;
+    min-width: 70px;
+    float: left;
+}

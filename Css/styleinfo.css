@@ -1,0 +1,52 @@
+body, html{
+    background-color: #010C10;
+}
+
+.ConteudoInfo{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ConteudoInfo img {
+    display: block;
+    max-width: 250px;
+    margin: 15px auto;
+    border-radius: 200px;
+}
+
+.ConteudoInfo h2{
+    margin-top: 30px;
+    text-align: center;
+    color:#FCB742 ;
+    font-family: "Julius sans One";
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.ConteudoInfo .texto1{
+    text-align: center;
+    color:#FCB742;
+    font-size: 30px;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.ConteudoInfo .texto2{
+    text-align: center;
+    color:#FCB742;
+    float: left;
+    font-size: 30px;
+    width: 55%;
+    margin: 6% 5%;
+}
+
+@media screen and (max-width:922px) {
+    
+    .ConteudoInfo .texto2{
+        float: none;
+        width: 100%;
+        margin: 40px 0px;
+        font-size: 30px;
+
+    }
+}
