@@ -143,6 +143,18 @@ section > img{
     font-size: 60px;
     color: #010C10;
     font-family: "Julius Sans One";
+    
+}
+
+#learnMore article h1:hover{
+    animation-fill-mode: forwards;
+    animation-name: piscar;
+    animation-duration: 3s;
+}
+
+@keyframes piscar {
+    from {color: #010C10;}
+    to {color: #FCB742;}
 }
 
 .outrasNoticias{
@@ -181,6 +193,12 @@ section > img{
     text-shadow: 0px 3px 5px #FCB742 ;
     padding: 10px;
     font-size: 23px;
+    transition: text-shadow 1s, font-size 1s;
 }
+
+.outrasNoticias a:hover{
+    font-size: 28px;
+    text-shadow: 0px 4px 10px #FCB742 ;
+}  
 
 /** Fim das classes das outras notícias **/
