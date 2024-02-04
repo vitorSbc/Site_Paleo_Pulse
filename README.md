@@ -7,4 +7,4 @@ Foi usado somente Html e Css, e para o design foi usado o site Figma.
 
 # Página Inicial do Site
 
-<img src="Imagens_Git/Paleo Pulse - Inicial.png">
+<img src="Imagens_Git/PaleoPulse.png">
