@@ -163,6 +163,7 @@ body {
     display: inline-block;
     margin: 95px 8% 0px 8%;
     width: 220px;
+    transition: background-color 1s, border-radius 1s, width 1s;
 }
 .IconesCategorias img{
     width: 100%;
@@ -170,6 +171,7 @@ body {
 .IconesCategorias:hover{
     background-color:#010C10;
     border-radius: 25px;
+    width: 225px;
 }
 
 .IconesCategorias a { /*Parte do texto dos Icones*/
@@ -272,8 +274,15 @@ body {
     font-size: 30px;
     text-shadow:0px 1px 5px #FCB742;
     font-family: 'League Spartan', sans-serif;
-
+    transition: text-shadow 1s, font-size 1s;
 }
+
+.textosNoticias a:hover{
+    font-size: 35px;
+    text-shadow: 0px 4px 10px #FCB742 ;
+
+
+}   
 /* Ajustes em relação ao tamanho da tela*/
 @media screen and (max-width:1439px) {
     .noticias{
@@ -286,7 +295,7 @@ body {
     
     .noticias img{
         float: none;
-        width: 400px;
+        width: 50%;
         display: block;
         margin:0 auto;
     }
@@ -320,7 +329,16 @@ body {
 }
 
 
-@media screen and (max-width:810px) {
+@media screen and (max-width:753px) {
+    .noticias{
+        padding-top: 20px;
+        max-height: 450px;    
+    }
+
+    .noticias img{
+        width: 40%;
+    }
+   
     .textosNoticias h2{
         font-size: 25px;
     }
@@ -387,7 +405,7 @@ body {
     }
 }
 
-@media screen and (max-width:830px) {
+@media screen and (max-width:820px) {
     #categorias{
         height: 1150px;
         max-height: 1450px;
