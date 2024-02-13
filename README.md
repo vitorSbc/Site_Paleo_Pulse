@@ -7,4 +7,4 @@ Foi usado Html/Css e  JavaScript, e para o design foi usado o site Figma.
 
 # Página Inicial do Site
 
-<img src="PaleoPulse.png">
+<img src="Paleo Pulse.png">
