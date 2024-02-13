@@ -636,13 +636,12 @@ body {
     }
 }
 
-@media screen and (max-width:820px) {
+
+@media screen and (max-width:800px) {
     #categorias{
         height: 1150px;
         max-height: 1450px;
     }
-
-
 }
 /*Id do Conteudo em Destaque*/
 #ConteudoDestaque{
