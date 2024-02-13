@@ -17,26 +17,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paleo Pulse - News</title>
 
+    <script type="text/javascript" src="JavaScript/jquery.js"> </script>
+    <script type="text/javascript" src="JavaScript/functions.js"></script>
+
 </head>
 <body>
+    <div class="blur-overlay"></div>
     <!--Inicio do Cabeçalho do Site-->
     <header id="cabecalho">
         <div class="logo">
            <a href="index.html"><img src="Pictures/Logo.png" width="215" /></a>
         </div>
         
-        <nav class="menu">
-            <a href="index.html"><strong>Inicio</strong></a>    |
-            <a href="Novidades.html">Novidades</a>    |
+        <nav id="iconeMenuMobile">
+            <div class="iconeMenuMobile"><img src="Pictures/Icones/menu-aberto.png"></div>
+        </nav>
+        <nav id="menuMobile" class="menuMobile">
+            <a href="index.html"><strong>Inicio</strong></a>    
+            <a href="#" id="novidades">Novidades</a>    
             <a href="Info.html">Sobre-Nós</a>
         </nav>
+        <nav class="menu">
+            <a href="index.html"><strong>Inicio</strong></a>    |
+            <a href="#" id="novidades">Novidades</a>    |
+            <a href="Info.html">Sobre-Nós</a>
+        </nav> 
         
     </header>
     <section id="ConteudoDestaque">
         <article class="Conteudo1">
             <section class="textos">
-                <div class="tituloConteudoDestaque">Um Novo Colosso</div><div class="clear"></div>
-                <a href="Perucetus-News.html">Ler mais</a>
+                <div class="tituloConteudoDestaque">Um Novo Colosso</div>
+                <a href="#" data-noticia ="noticia4">Ler Mais</a>
             </section>
         </article>
     </section>
@@ -49,16 +61,16 @@
             </section>
                <!---Inicio dos Icones das Categorias-->
                 <article class="IconesCategorias">
-                    <a href="Arqueologia.html"><img src="Pictures/Icones/pintura-rupestre-2.png" ></a>
-                    <a href="Arqueologia.html"><h2 >Arqueologia</h2></a>
+                    <img src="Pictures/Icones/pintura-rupestre-2.png" >
+                    <h2 >Arqueologia</h2>
                 </article>
                 <article class="IconesCategorias">
-                    <a href="Paleontologia.html"><img src="Pictures/Icones/Trex-2.png" ></a>
-                    <a href="Paleontologia.html"><h2>Paleontologia</h2></a>
+                    <img src="Pictures/Icones/Trex-2.png">
+                    <h2>Paleontologia</h2>
                 </article>
                 <article class="IconesCategorias">
-                    <a href="Historia.html"><img src="Pictures/Icones/Livro-2.png" ></a>
-                    <a href="Historia.html"><h2>História </h2> </a>
+                    <img src="Pictures/Icones/Livro-2.png" >
+                   <h2>História </h2> 
                 </article>
                 <!---Final dos Icones das Categorias-->
         </section>
@@ -69,40 +81,852 @@
         <article class="titulosMarcadores">
             News
         </article>
+
         <!--Primeira Noticia-->
-        <article class="noticias primeiraNoticia">
-            <img src="Pictures/Icones/Pyconenomo-Icone.png" >
-            <div class="textosN">     
-                <div class="textosNoticias">
-                    <h2>O Guepardo do Cretáceo</h2>
-                    <p>O Pycnonemosaurus nevesi, um dinossauro que viveu em uma região que atualmente corresponde ao Mato Grosso, há 70 milhões de anos, é o maior exemplar da família Abelisauridae.</p>
-                    <a href="Pycnonemosaurus.html">Ler Mais</a>  
+
+        <section class="paleontologia">
+            <article class="noticias primeiraNoticia">
+                <img src="Pictures/Icones/Pyconenomo-Icone.png" >
+                <div class="textosN">     
+                    <div class="textosNoticias">
+                        <h2>O Guepardo do Cretáceo</h2>
+                        <p>O Pycnonemosaurus nevesi, um dinossauro que viveu que atualmente corresponde ao Mato Grosso, há 70 milhões de anos, é o maior exemplar da família Abelisauridae.</p>
+                        <a href="#" data-noticia ="noticia1">Ler Mais</a>  
+                    </div>
                 </div>
-            </div>
-        </article>
+            </article>
+            <!--A noticia em si numero 1-->
+            <article id ="noticia1" class="conteudoNoticia ">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/Pyconemosaurus/Pycono-restor.jpg">
+                <section class="informacoes">
+                    <h1>O Guepardo do Cretáceo</h1>
+                    
+                    <h2>O Pyconemosaurus</h2>
+                    <p>
+                        Cientistas revelam a descoberta de uma nova espécie de dinossauro Abelisauridae, desenterrando os segredos de um predador formidável do período Cretáceo. Conhecido como Pycnonemosaurus nevesi, esse impressionante carnívoro agora faz parte do nosso conhecimento sobre a diversidade da vida pré-histórica.
+                    </p>
+                    
+                    <article class="imgPrincipal borda">
+                        <img  src="Pictures/Pyconemosaurus/Pycnonem_Group-2.jpg" style="max-height: 380px;">
+                        <div class="textoImagem">Paleo Art</div>
+                    </article>
+                    
+                    <h2>O Fossil</h2>
+
+                    <p>
+                        Os restos fossilizados do Pycnonemosaurus nevesi foram encontrados em uma expedição paleontológica cuidadosamente conduzida na região que hoje é o Brasil. Os pesquisadores, liderados pelo renomado paleontólogo Dr. Luís Neves, nomearam a espécie em homenagem ao seu notável contributo para a compreensão da paleontologia na América do Sul.
+                    </p>
+                    
+                    <p>
+                        Com base nas análises detalhadas dos fósseis, os cientistas conseguiram reconstruir um retrato impressionante deste Abelisauridae. O Pycnonemosaurus nevesi, datado do período Cretáceo Superior, aproximadamente entre 90 e 70 milhões de anos atrás, apresenta características distintivas que o diferenciam de outros dinossauros já descobertos.
+                    </p>
+                    
+                    <article class="imgPrincipal">
+                        <img src="Pictures/Pyconemosaurus/PYCNONEMOSAURUS fossil.png" style="max-height: 400px;">
+                    </article>
+
+                    <p>
+                        Este predador pré-histórico exibia cristas e projeções ósseas únicas em seu crânio, indicando possíveis adaptações para a comunicação intraespecífica ou mesmo para exibições rituais. Além disso, a análise da anatomia revela que o Pycnonemosaurus nevesi possuía membros robustos e uma mandíbula poderosa, características típicas de predadores topos de cadeia alimentar.
+                    </p>
+                    
+                    <article class="imgPrincipal">
+                        <img src="Pictures/Pyconemosaurus/Carnotaurini_sizes_updated-2 .png" >
+                    </article>
+                    
+                    <p>
+                        A descoberta do Pycnonemosaurus nevesi não apenas amplia nosso entendimento sobre a fauna cretácica, mas também lança luz sobre a evolução dos dinossauros Abelisauridae na América do Sul. As implicações para a paleontologia regional são significativas, contribuindo para a compreensão de como os ecossistemas pré-históricos se desenvolveram ao longo do tempo.
+                    </p>
+                    
+        
+                </section>
+            </article>
+        </section>
+
         <!--Segunda Noticia-->
-        <article class="noticias segundaNoticia">
-            <img src="Pictures/Icones/antropology-2.png">
-            <div class="textosN">
-                <div class="textosNoticias">
-                    <h2>O Rosto do Passado</h2>
-                    <p >Brasileiros usam fragmentos de ossos para fazer incrivel reconstrução facial de egípcio que viveu há 35 mil anos.</p>
-                    <a href="O_Rosto_Egipcio.html">Ler Mais</a>  
+
+        <section class="arqueologia">
+            <article class="noticias segundaNoticia">
+                <img src="Pictures/Icones/antropology-2.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>O Rosto do Passado</h2>
+                        <p >Brasileiros usam fragmentos de ossos para fazer incrivel reconstrução facial de egípcio que viveu há 35 mil anos.</p>
+                        <a href="#" data-noticia ="noticia2">Ler Mais</a>  
+                    </div>
                 </div>
-            </div>
-        </article>
+            </article>
+             <!--A noticia em si numero 2-->
+             <article id="noticia2" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/TheFaceofpast/Recostrução2.jpg">
+                <section class="informacoes">
+                    <h1>O Rosto do passado</h1>
+
+                    <h2>A pesquisa</h2>
+
+                    <p>
+                        Cientistas utilizaram técnicas de aproximação facial forense, com o auxílio de fotogrametria e softwares de modelagem 3D, em fóssil de um homem do egíto de 35 mil anos atrás
+                    </p>
+                    <p>
+                        Os restos do esqueleto do homem, identificado como Nazlet Khater 2 (ou NK2, já que é o segundo corpo humano encontrado no sítio de Nazlet Khater), foram descobertos em 1980 no Vale do Nilo.
+                    </p>
+                    <article class="imgPrincipal borda" >
+                        <img src="Pictures/TheFaceofpast/Location-of-the-site-of-Nazlet-Khater-4-Middle-Egypt-and-of-Upper-and-Middle.png" style="max-width: 400px;">
+                        <div class="textoImagem">Sítio de Nazlet Khater</div>
+                    </article>
+                    <p>
+                        As análises antropológicas do corpo levaram especialistas a concluir que se tratava de um homem com idades entre 17 e 20 anos, medindo pouco menos de 165 cm e descendente de africanos.
+                    </p>
+        
+                    <p>
+                        Algumas características de perfurações e lesões que sugerem trabalho pesado em vida, o que corrobora as evidências do sítio Nazlet Khater ter sido um local de mineração de cherte, uma rocha sedimentar.
+                    </p>
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/TheFaceofpast/Restauração2.jpg" style="max-height: 350px; max-width: 350px;">
+                        <div class="textoImagem">Reconstrução do NK2</div>
+                    </article>
+        
+                    <h2>O uso da tecnologia</h2>
+
+                    <p>
+                        Embora o esqueleto estivesse quase completo, o trabalho de Moraes e Santos enfrentou uma grande dificuldade: faltavam partes do crânio, algumas na região facial.
+                    </p>
+        
+                    <p>
+                        Como a parte esquerda do rosto estava completa, eles fizeram um "espelho" para preencher a parte que faltava no lado direito, explicam em seu estudo.
+                    </p>
+        
+                    <article class="imgPrincipal">
+                        <img src="Pictures/TheFaceofpast/Reconstrução.jpg" style="max-width: 550px;">
+                        <div class="textoImagem">Programa Recostruindo a face do NK2</div>
+                    </article>
+                    <p>
+                        Aplicando esta e outras técnicas de reconstrução craniana, eles criaram um modelo para trabalhar com software que costuma ser usado neste tipo de recriações, "gerando dados mais robustos sobre o tamanho dos lábios e do nariz", explicam os especialistas.
+                    </p>
+        
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/TheFaceofpast/NK2_3.2.jpg" style="max-width: 550px;">
+                        <div class="textoImagem">Reconstrução do NK2</div>
+                    </article>
+        
+                    <p>
+                        Para fins de divulgação, os especialistas também ofereceram uma abordagem mais artística, com características dos habitantes dessa região egípcia.
+                    </p>
+        
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/TheFaceofpast/Egipcio_Recostrução2.jpg" style="max-width: 550px;">
+                        <div class="textoImagem">Reconstrução do NK2</div>
+                    </article>
+        
+                    <p>
+                        “As aproximações faciais forenses são uma forma de humanizar os indivíduos, que o grande público só reconhece como ‘esqueletos’. Tentar recuperar a aparência que um indivíduo tinha em vida há milhares de anos é uma forma de trazê-los para os dias atuais, aproximando-os do público”, destaca Santos.
+                    </p>
+                </section>
+            </article>
+        </section>
         
         <!--Terceira Noticia-->
-        <article class="noticias terceiraNoticia">
-            <img src="Pictures/Icones/aztec-pyramid.png">
-            <div class="textosN">
-                <div class="textosNoticias">
-                    <h2>A cidade Escondida na amazônia</h2>
-                    <p>Por milhares de anos escondida pela vegetação, uma enorme cidade antiga foi recentemente encontrada na Amazônia equatoriana.</p>
-                    <a href="A_Cidade_Escondida.html" >Ler Mais</a>    
+        <section class="historia">
+            <article class="noticias terceiraNoticia">
+                <img src="Pictures/Icones/aztec-pyramid.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>A cidade Escondida na amazônia</h2>
+                        <p>Por milhares de anos escondida pela vegetação, uma enorme cidade antiga foi recentemente encontrada na Amazônia equatoriana.</p>
+                        <a href="#" data-noticia ="noticia3">Ler Mais</a>    
+                    </div>
                 </div>
-            </div>
-        </article>
+            </article>
+            <article id="noticia3" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/HiddenCity/Cidade_Amazonia.jpg ">
+                <section class="informacoes">
+                    <h1>As Cidades Interconectadas</h1>
+                    
+                    <p>
+                        Arqueólogos fazem uma descoberta extraordinária no Vale Upano do Equador, revelando uma densa rede de cidades interconectadas que remontam a pelo menos 2,5 mil anos. Esta descoberta surpreendente supera em mais de mil anos qualquer outra sociedade complexa conhecida na Amazônia.
+                    </p>
+                    
+                    <p>
+                        Publicado na revista Science, o estudo liderado pelo arqueólogo Stéphen Rostain revela mais de 6 mil plataformas de terra dispostas geometricamente, conectadas por estradas e entrelaçadas com paisagens agrícolas no Vale Upano. A descoberta é uma janela para uma civilização ancestral até então desconhecida na região amazônica.
+                    </p>
+                    
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/HiddenCity/Amazon_City.jpg" style="max-width:500px;">
+                        <div class="textoImagem">Mapa da cidade de Kunguits<div>
+                    </article>
+                    <h2>A Cronologia das descobertas</h2>
+                    
+                    <p>
+                        Após quase 30 anos de escavações, a equipe de Rostain explorou grandes assentamentos como Sangay e Kilamope, encontrando montes organizados em torno de praças centrais, cerâmica decorada e até mesmo grandes jarras contendo restos da tradicional cerveja de milho, a chicha.
+                    </p>
+        
+                    <p>
+                        Em 2015, um avanço tecnológico crucial ocorreu com o financiamento do Instituto Nacional de Patrimônio Cultural do Equador, utilizando a tecnologia Lidar. O levantamento aéreo revelou cinco grandes e dez pequenos assentamentos em uma área de 300 km², todos densamente povoados com estruturas cerimoniais e agrícolas.
+                    </p>
+        
+                   <article class="imgPrincipal">
+                        <img src="Pictures/HiddenCity/Amazon_City2.1.jpg" style="max-width:400px;">
+                        <div class="textoImagem">Mapa da cidade de Kunguits de cima<div></div>
+                    </article>
+        
+                    <p>
+                        A descoberta inclui estradas largas e retas, ruas entre casas e bairros, sugerindo um nível avançado de urbanismo. Embora a população exata ainda seja incerta, estimativas apontam para pelo menos 10 mil habitantes no Vale Upano, possivelmente atingindo entre 15 mil e 30 mil em seu auge, destacando a magnitude dessas antigas civilizações.
+                    </p>
+        
+                    <p>
+                        Esta descoberta não apenas redefine a história amazônica, mas também enfatiza a diversidade e complexidade das sociedades antigas na região. Os pesquisadores concluem que estão apenas começando a compreender a riqueza da história da Amazônia, destacando a importância dessas recentes revelações arqueológicas.
+                    </p>
+            </article>
+        </section>
+
+        <!--Quarta Noticia-->
+        <section class="paleontologia">
+            <article class="noticias quartaNoticia">
+                <img src="Pictures/Icones/platecarpus-2.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>O Colosso Peruano</h2>
+                        <p >Descobertas de Fósseis  no Peru, revelam o possível animal mais pessado que já existiu.  </p>
+                        <a href="#" data-noticia ="noticia4">Ler Mais</a>  
+                    </div>
+                </div>
+            </article>
+            <article id="noticia4" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/Perucetus/Baleia Colossau4.jpeg">
+                <section class="informacoes">
+                    <h1>Um Novo Colosso</h1>
+                    <p>
+                        Os fósseis de uma baleia-colossal antiga descoberta no Peru, mostra que pode ser o animal mais pesado já registrado, de acordo com um novo estudo das revista cientifica Nature.
+                    </p>
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Perucetus/Baleia_3.0.jpg">
+                        <div class="textoImagem">PaleoArt de um Perucetus</div>
+                    </article>
+
+                    
+                    <p>
+                        Com uma massa corporal estimada de 85 a 340 toneladas, o peso da agora extinta Perucetus colossus é equivalente ou superior ao da baleia azul, que foi indiscutivelmente considerada o animal com a maior massa corporal até agora.
+                    </p>
+                    <h2>O Gigante</h2>
+                    <p>
+                        O esqueleto parcial de Perucetus, composto por 13 vértebras, quatro costelas e um osso do quadril, é estimado em 17 a 20 metros de comprimento. O espécime fóssil é menor do que o de uma baleia azul de 25 metros de comprimento – mas sua massa esquelética ainda potencialmente excedeu a de qualquer mamífero ou vertebrado marinho conhecido, incluindo seu parente gigante, de acordo com o estudo.
+                    </p>
+                    <article class="imgPrincipal">
+                        <img src="Pictures/Perucetus/Baleias_2.jpg">
+                    </article>
+                    <p>
+                          “Perucetus poderia pesar quase duas baleias azuis, três argentinossauros (um dinossauro saurópode gigante), mais de 30 elefantes africanos e até 5 mil pessoas”, disse Bianucci, que é professor associado de paleontologia no departamento de ciências da Terra da Universidade de Pisa, na Itália.
+                    </p>
+
+                    <h2>A fisiologia</h2>
+
+                    <p>
+                        Perucetus provavelmente nadou lentamente devido à sua enorme massa corporal e estilo de natação, que era ondulatório e anguiliforme, o que significa que seu corpo flexível se movia em ondas curvas da cabeça à cauda.
+                    </p>
+                    <p>
+                        Os ossos do Perucetus “são extremamente densos e compactos”, disse Bianucci. “Esse tipo de espessamento e peso do esqueleto – chamado paquiosteosclerose – que o Perucetus compartilha com os sirênios não é encontrado em nenhum cetáceo vivo”. Os sirênios são grandes mamíferos herbívoros aquáticos, como peixes-boi, vacas marinhas e dugongos.
+                    </p>
+                    <article class="imgPrincipal">
+                        <img src="Pictures/Perucetus/Perucetus_colossus_Holotype_skeletal_drawing2.png">
+                    </article>
+                    <p>
+                        A localização privilegiada desta descoberta no Eoceno Peruano proporciona uma visão única dos ecossistemas marinhos que prosperavam na região. Os paleontólogos estão ansiosos para desvendar os segredos que Perucetus guarda sobre as condições ambientais, interações ecológicas e a cadeia alimentar marinha durante esse período crucial da história da Terra.
+                    </p>
+                    <p>
+                        O Perucetus não é apenas uma peça essencial no quebra-cabeça da evolução marinha, mas também destaca a importância da preservação e exploração de sítios paleontológicos em todo o mundo. À medida que continuamos nossa jornada para entender as raízes da vida em nosso planeta, cada nova descoberta como a do Perucetus é um elo valioso na corrente do conhecimento paleontológico.
+                    </p>
+                </section>
+        </section>
+
+        <!--Quinta Noticia-->
+        <section class="arqueologia">
+            <article class="noticias quintaNoticia">
+                <img src="Pictures/Icones/archeology.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>Os mistériosos ossos de 2 mil anos atrás</h2>
+                        <p >Os mistérioso ossos de um jovem que nasceu no sul da Rússia e foram encontrados no Interior da Inglaterra.  </p>
+                        <a href="#" data-noticia ="noticia5">Ler Mais</a> 
+                    </div>
+                </div>
+            </article>
+            <article id="noticia5" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/Os_Ossos/Warrios.jpg">
+                <section class="informacoes">
+                    <h1>Os mistériosos ossos de 2 mil anos atrás</h1>
+                    <h2>A descoberta</h2>
+                    <p>
+                        Em uma reviravolta arqueológica surpreendente, detetives de DNA traçaram os passos de um jovem Sármata, nascido há dois mil anos no sul da Rússia, até o interior da Inglaterra.
+                    </p>
+                    <p>
+                        O esqueleto, apelidado de Offord Cluny 203645, foi encontrado durante escavações para melhorar uma estrada entre Cambridge e Huntingdon, revelando uma história intrigante da Grã-Bretanha romana.
+                    </p>
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Os_Ossos/Skeleton.jpg" style="max-height: 225px">
+                        <div class="textoImagem">O esqueleto de Offord Cluny 203645<div>
+                    </article>
+                    <p>
+                        A pesquisa, conduzida pelo Laboratório de Genômica Antiga do Instituto Francis Crick, em Londres, decodificou o DNA do jovem Sármata a partir de um minúsculo osso do ouvido interno.
+                    </p>
+        
+                    <p>
+                        Os resultados indicaram uma origem distante, na região que abrange o sul da Rússia, Armênia e Ucrânia, destacando a primeira prova biológica da presença dos Sármatas na Grã-Bretanha.
+                    </p>
+                   <article class="imgPrincipal borda">
+                        <img src="Pictures/Os_Ossos/Sarmatas-map.png" style="max-width: 520px">
+                        <div class="textoImagem">Mapa da região de onde seria Sarmácias.<div>
+                    </article>
+        
+                    <p>
+                        Os métodos avançados de análise de DNA antigo permitiram reconstruir a jornada do jovem, desafiando a expectativa inicial de que ele fosse um habitante local.
+                    </p>
+        
+                    <p>
+                        Os dentes fossilizados, analisados pela equipe de arqueólogos da Universidade de Durham, revelaram mudanças na dieta ao longo do tempo, sugerindo uma migração gradual para oeste.
+                    </p>
+        
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Os_Ossos/Caveira.jpg" style="max-width: 350px;">
+                        <div class="textoImagem">Fóssil do Offord Cluny 203645.</div>
+                    </article>
+                    
+                    <p>
+                        Os dentes se desenvolvem ao longo do tempo, por isso, tal como os anéis das árvores, cada camada registra uma "retrato" dos produtos químicos que os rodeavam naquele momento.
+                    </p>
+        
+                    <p>
+                        A análise mostrou que até os 6 anos ele comia milho e grãos de sorgo, conhecidos cientificamente como culturas C4, que são abundantes na região onde se sabe que os sármatas viveram.
+        
+                    </p>
+        
+                    <p>
+                        No entanto, com o tempo, a análise mostrou uma diminuição gradual no consumo desses grãos e de mais trigo, encontrado na Europa Ocidental, de acordo com a professora Janet Montgomery, da Universidade de Durham.
+                    </p>
+        
+                    <p>
+                        "A análise nos diz que ele, e não os seus antepassados, fez a viagem para a Grã-Bretanha. À medida que cresceu, migrou para oeste, e estas plantas desapareceram de sua dieta", disse ela.
+                    </p>
+        
+                    <h1>Registro Histórico</h1>
+                   
+                    <p>
+                        Os registros históricos indicam que Offord pode ter sido filho de um cavaleiro ou mesmo seu escravo, com evidências de uma unidade da cavalaria Sármata incorporada ao Exército romano enviada à Grã-Bretanha na época em que ele viveu.
+                    </p>
+        
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Os_Ossos/Escultura.jpg" style="max-width: 350px;">
+                        <div class="textoImagem">Registro dos Sármatas</div>
+                    </article>
+        
+                    <p>
+                        Alex Smith, da MOLA Headland Infrastructure, empresa líder na escavação, enfatizou o impacto dessas descobertas, afirmando que as técnicas de análise química e de DNA estão transformando nossa compreensão não apenas das cidades, mas também das sociedades rurais durante o período romano.
+                    </p>
+                    
+                    <p>
+                        O líder do Laboratório de Genômica Antiga, Pontus Skoglund, destacou a significância da nova tecnologia, afirmando que o DNA antigo está revolucionando a compreensão dos períodos romano e pré-romano. Essa descoberta reforça a ideia de um movimento mais amplo e dinâmico na sociedade romana, proporcionando uma visão única da mobilidade humana na antiguidade.
+                    </p>
+                </section>
+        </section>
+
+        <!--Sexta Noticia-->
+        <section class="historia">
+            <article class="noticias sextaNoticia">
+                <img src="Pictures/Icones/oasis.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>Muralha de 4 mil anos</h2>
+                        <p >Muralha de 4 mil anos que protegia complexo de oásis é descoberta na Arábia Saudita  </p>
+                        <a href="#" data-noticia ="noticia6">Ler Mais</a>   
+                    </div>
+                </div>
+            </article>
+            <article id="noticia6" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/Muralha/Oasis4.jpg">
+                <section class="informacoes">
+                    <h1>A muralha Saudita</h1>
+                    
+                    <p>
+                        Uma recente descoberta arqueológica revelou uma muralha de mais de 4 mil anos cercando o Oásis de Khaybar, no Deserto do Norte da Arábia Saudita. A fortificação, identificada por meio de levantamentos de campo, sensoriamento remoto e estudos arquitetônicos, lança luz sobre a complexidade social e ocupação humana no noroeste da Arábia durante o período pré-islâmico.
+                    </p>
+                    
+                    <h2>Descoberta e Dimensões da Muralha</h2>
+                    
+                    <p>
+                        Pesquisadores do Centro Nacional de Pesquisa Científica da França (CNRS) e da Comissão Real para AlUla (RCU) revelaram a descoberta da muralha, que data entre 2250 e 1950 a.C. Estimada em 14,5 km de comprimento e com cerca de 5 metros de altura, a estrutura cercava um território rural e sedentário de aproximadamente 1,1 mil hectares.
+                    </p>
+        
+                   <article class="imgPrincipal borda">
+                        <img src="Pictures/Muralha/Muralha_Digital.jpg" style="max-width:600px;">
+                        <div class="textoImagem">Reconstrução digital da rede de muralhas</div>
+                    </article>
+        
+                    <p>
+                        A descoberta desempenha um papel crucial na confirmação do surgimento de um complexo de oásis murados durante a Idade do Bronze. Essa tendência, fundamental para a criação de complexidade social e política indígena, desafia concepções anteriores e expande o conhecimento sobre as civilizações que habitavam a região.
+                    </p>
+        
+                    <p>
+                        Os pesquisadores sugerem que as muralhas de Khaybar foram construídas por populações indígenas, marcando territorialmente o oásis. A estrutura, que durou vários séculos, foi desmantelada ou substituída por estruturas mais recentes ao longo do tempo, evidenciando a evolução da ocupação humana na região.
+                    </p>
+        
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Muralha/Mapa_Região.jpg" style="max-width:600px;">
+                        <div class="textoImagem">Região do Oásis Khaybar nos dias atuais</div>
+                    </article>
+        
+                    <p>
+                        A descoberta levanta questões sobre o propósito da construção da muralha, bem como sobre as relações das populações locais com outras comunidades fora do oásis. Além disso, abre perspectivas para avanços significativos na compreensão do passado pré-histórico, pré-islâmico e islâmico na Península Arábica noroeste, promovendo novas direções para futuras pesquisas arqueológicas.
+                    </p>
+                </section>
+        </section>
+        
+        <!--Setima Noticia-->
+        <section class="paleontologia">
+            <article class="noticias setimaNoticia">
+                <img src="Pictures/Icones/psittacosaurusvsrepenomamus.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>A Briga Presa no Tempo</h2>
+                        <p>A briga congelada no tempo, de um mamífero pré-histórico e um pequeno dinossauro
+                            lutando por sua vida</p>
+                            <a href="#" data-noticia ="noticia7">Ler Mais</a>    
+                    </div>
+                </div>
+            </article>
+            <article id="noticia7" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/TheFight/Treta2.0.jpg">
+                <section class="informacoes">
+                    <h1>A Briga Presa no Tempo</h1>
+                    <p>
+                        Cientistas anunciaram a descoberta de um fóssil extraordinário que oferece uma visão única de um confronto pré-histórico entre um  predador formidável: o mamífero Repenomamus Robustus e o dinossauro Psitacossauro.
+                    </p>
+                    
+                    <article class="imgPrincipal borda">
+                        <img  src="Pictures/TheFight/Treta2.2.jpg" style="max-height: 380px;">
+                    </article>
+                    
+                    <h2>O Último Combate</h2>
+
+                    <p>
+                        A descoberta ocorreu durante uma expedição liderada por uma equipe internacional de paleontólogos em uma região remota da Ásia Central. O fóssil incrivelmente preservado revelou os dois animais em uma posição única, como se estivessem envolvidos em uma batalha feroz que foi instantaneamente congelada no tempo.
+                    </p>
+                    
+                    <p>
+                        A análise detalhada do fóssil revelou evidências de marcas de dentes e arranhões em ambas as criaturas, sugerindo que o confronto não era apenas um encontro casual, mas sim uma luta intensa pela sobrevivência. 
+                    </p>
+
+                    <h2>Repenomamus Robustus: </h2>
+
+                    <p>
+                        Os cientistas acreditam que o Repenomamus Robustus, um mamífero que viveu durante o período Cretáceo e tinha o tamanho aproximado de um gato doméstico, possuía mandíbulas poderosas que poderiam ter sido usadas para caçar presas consideravelmente maiores do que outros mamíferos contemporâneos.
+                    </p>
+                    <article class="imgPrincipal">
+                        <img src="Pictures/TheFight/Repenomamus_robustus_skeletal_drawing.jpg">
+                    </article>
+                    
+                    <article class="imgPrincipal">
+                        <img src="Pictures/TheFight/Repenomamus_cat.jpg" >
+                    </article>
+        
+                    <h2>Psittacosaurus mongoliensis: </h2>
+
+                    <p>
+                        Já o Psittacosaurus mongoliensis era um dinossauro relativamente pequeno em comparação com alguns de seus contemporâneos, atingindo cerca de dois metros de comprimento. Sua forma distintiva e característica de corpo, com pernas curtas e uma cauda longa, denota sua adaptação a uma vida terrestre. Uma característica notável era a cabeça, que apresentava um bico córneo semelhante ao de um papagaio, daí o nome "Psittacosaurus", que significa "lagarto papagaio".
+                    </p>
+                    
+                    <article class="imgPrincipal">
+                        <img src="Pictures/TheFight/Psittacosaurus_sp_skeletal1.0.png" >
+                    </article>
+        
+                    <article class="imgPrincipal">
+                        <img src="Pictures/TheFight/Psittacosaurus_Scale.png" >
+                    </article>
+        
+                    <p>
+                        A descoberta não apenas oferece uma visão inédita do comportamento interativo entre diferentes espécies do período Cretáceo, mas também levanta questões fascinantes sobre a ecologia e as interações predatórias da época.
+                    </p>
+        
+                    <p>
+                        A Dra. Ana Silva, líder da equipe de pesquisa, expressou sua empolgação com a descoberta: "É raro encontrar fósseis que capturam momentos tão específicos e dramáticos na vida de criaturas antigas. Este fóssil proporciona uma oportunidade única para entendermos mais sobre as dinâmicas ecológicas e os desafios enfrentados por esses animais durante o Cretáceo."
+                    </p>
+        
+                    <article class="imgPrincipal">
+                        <img src="Pictures/TheFight/Psitacossauro_Fossil.jpg" >
+                        <div class="textoImagem">O Fossil encontrado</div>
+                    </article>
+        
+                    <p>
+                        A comunidade científica aguarda ansiosamente por mais estudos detalhados sobre este fóssil extraordinário, esperando que ele forneça insights ainda mais profundos sobre a vida e as interações entre as espécies que habitaram nosso planeta há milhões de anos.
+                    </p>
+                </section>
+        </section>
+    
+        <!--Oitava Noticia-->
+        <section class="arqueologia">
+            <article class="noticias oitavaNoticia">
+                <img src="Pictures/Icones/CaveMan2.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>O Elo entre Neandertais e Sapiens</h2>
+                        <p>Pesquisadores analisaram 4 mil genomas de até 40 mil anos para retraçar a história das relações entre as duas espécies 
+                        </p>
+                        <a href="#" data-noticia ="noticia8">Ler Mais</a>     
+                    </div>
+                </div>
+            </article>
+            <article id="noticia8" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/O_Elo/01_Neanderthal-Family.jpg">
+                <section class="informacoes">
+                    <h1>O Elo entre Neandertais e Sapiens</h1>
+        
+                    <h2>O Laço no dna</h2>
+                    
+                    <p>
+                        Um estudo inovador conduzido por pesquisadores da Universidade de Genebra proporciona novas perspectivas sobre a relação entre Neandertais e Homo sapiens nos últimos 40 mil anos.
+                    </p>
+                    
+                    <p>
+                        Publicado na Science Advances, o estudo revela que, durante o período de transição em que os Neandertais deram lugar aos Homo sapiens, as duas espécies não apenas coexistiram, mas também interagiram, deixando um legado genético intrigante.
+                    </p>
+                    
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/O_Elo/Neanderthals.jpg" style="max-width: 670px; border-radius: 50px;">
+                        <div class="textoImagem">Imagem ilustrativa de um Neandertal<div>
+                    </article>
+                    
+                    <p>
+                        Ao analisar amostras de DNA de indivíduos dessa época, os cientistas identificaram variações sutis no tempo e no espaço das relações genéticas entre as espécies.
+                    </p>
+        
+                    <p>
+                        Surpreendentemente, cerca de 2% do DNA Neandertal persiste nas populações da Eurásia, com uma distribuição ligeiramente maior na Ásia do que na Europa. Essa assimetria levanta questões fascinantes sobre as influências da seleção natural e dos movimentos migratórios.
+                    </p>
+        
+                <article class="imgPrincipal borda">
+                        <img src="Pictures/O_Elo/Neanderthal_Range.png" style="max-width: 700px">
+                    </article>
+        
+                    <p>
+                        O foco da pesquisa foi nas populações europeias, onde a preservação de ossos e DNA é mais abundante devido à extensiva pesquisa arqueológica. Os cientistas identificaram um declínio na proporção de DNA Neandertal nos genomas europeus durante a transição para o Neolítico, coincidindo com a chegada de agricultores de Anatolia e da região do Egeu.
+                    </p>
+        
+                    <p>
+                        Esses agricultores carregavam uma proporção menor de DNA Neandertal do que as populações europeias da época, resultando em uma diluição adicional do legado genético Neandertal.
+                    </p>
+        
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/O_Elo/Neandertal_Sapies.jpg" style="max-width: 580px; border-radius: 50px;">
+                        <div class="textoImagem">Imagem ilustrativa de um Neandertal e um Sapien.</div>
+                    </article>
+                    
+                    <p>
+                        O estudo destaca a importância de combinar análises genômicas com dados arqueológicos para traçar a história complexa da hibridização entre essas espécies humanas antigas.
+                    </p>
+        
+                    <p>
+                        Essa abordagem permitiu aos cientistas reconstruir diferentes estágios desse processo ao longo do tempo e do espaço, proporcionando insights valiosos sobre as interações genéticas que moldaram nossa história evolutiva.
+                    </p>
+            </section>
+        </section>
+
+        <!--Nona Noticia-->
+        <section class="historia">
+            <article class="noticias nonaNoticia">
+                <img src="Pictures/Icones/viking-ship.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>A presença viking na América</h2>
+                        <p>Um estudo publicado na revista de arqueologia “Antiquity” oferece evidências de que os vikings chegaram à América cerca de 500 anos antes de Cristóvão Colombo.</p>
+                        <a href="#" data-noticia ="noticia9">Ler Mais</a>    
+                    </div>
+                </div>
+            </article>
+            <article id="noticia9" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/Vikings/Vikings.jpg">
+                <section class="informacoes">
+                    <h1>Os vikings na América do Norte</h1>
+                    
+                    <p>
+                        Um estudo recente, publicado na revista "Antiquity", oferece mais suporte à teoria de que os vikings exploraram a América cerca de 500 anos antes de Cristóvão Colombo.
+                    </p>
+                    
+                    <p>
+                        Arqueólogos da Universidade da Islândia analisaram amostras de madeira de áreas no oeste da Groenlândia ocupadas pelos nórdicos entre 985 e 1450, descobrindo que parte das espécies encontradas não era nativa, indicando a importação de madeira do norte da Europa e das Américas.
+                    </p>
+                    
+                    <article class="imgPrincipal borda">
+                         <img src="Pictures/Vikings/Navio_Viking.jpg" style="max-width:900px;">
+                         <div class="textoImagem">Embarcação viking preservada.</div>
+                     </article>
+        
+                    <h2>Provas Arqueológicas</h2>
+        
+                    <p>
+                        O estudo revela que as colônias vikings, situadas na Groenlândia, importavam madeira para atender às demandas de construção naval e grandes edificações, já que as árvores nativas não eram adequadas. A pesquisa destaca a conectividade do mundo medieval do Atlântico Norte e destaca a presença de conhecimento e embarcações apropriadas para cruzar o Estreito de Davis até a costa leste da América do Norte até o século 14.
+                    </p>
+        
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Vikings/Woods_2.jpg" style="max-width:1040px;">
+                        <div class="textoImagem">Peças de madeiras estudadas</div>
+                    </article>
+                    
+                    <p>
+                        A variedade de fontes de madeira utilizadas na Groenlândia Nórdica ilustra a conectividade do mundo medieval do Atlântico Norte, indicando não apenas a capacidade de navegação dos vikings, mas também as complexas redes comerciais e contatos com outras regiões.
+                    </p>
+                    
+                    <p>
+                        A pesquisa se alinha com descobertas anteriores, incluindo o sítio arqueológico de L'Anse aux Meadows no Canadá, onde vestígios de casas viking foram encontrados. Em 2021, estudos de datação mostraram que os vikings estiveram na América do Norte em 1021, corroborando narrativas mitológicas e lendas nórdicas que descrevem as expedições lideradas por Leif Erikson.
+                    </p>
+        
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Vikings/House_Viking.jpg" style="max-width:840px;">
+                        <div class="textoImagem">Casa Viking achada no Canadá</div>
+                    </article>
+        
+                    <p>
+                        Essas recentes evidências reforçam a presença viking na América e levantam questões sobre a natureza das interações entre vikings e povos indígenas. As pesquisas arqueológicas continuam a contribuir para uma compreensão mais rica do passado pré-colombiano e destacam a importância de explorar a história antes das expedições europeias mais amplamente conhecidas.
+                    </p>
+                </section>
+        </section>
+
+        <!--Decima Noticia-->
+        <section class="paleontologia">
+            <article class="noticias decimaNoticia">
+                <img src="Pictures/Icones/Ubirajara-logo.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>O roubado</h2>
+                        <p >O fóssil cearense contrabandeado na decade de 90,  devolvido ao Brasil após ficar quase 30 anos na Alemanha.</p>
+                        <a href="#" data-noticia ="noticia10">Ler Mais</a>  
+                    </div>
+                </div>
+            </article>
+            <article id="noticia10" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/Ubirajara/Ubi.png">
+                <section class="informacoes">
+                    <h1>O Roubado</h1>
+        
+                    <h2>A Saga</h2>
+                    <p>
+                        Uma saga paleontológica envolvendo o fóssil do dinossauro brasileiro Ubirajara ganha destaque internacional com a revelação de que o exemplar, após uma misteriosa jornada, passou décadas em solo alemão antes de retornar às terras brasileiras. O caso acrescenta um enigma intrigante à história de Ubirajara e destaca a importância da cooperação entre nações na preservação do patrimônio paleontológico.
+                    </p>
+                    
+                    <article class="imgPrincipal borda">
+                        <img  src="Pictures/Ubirajara/Ubirajara-2.1.2.jpg" style="max-height: 480px;">
+                    </article>
+                    
+                    <p>
+                        A trajetória do fóssil do Ubirajara remonta às primeiras décadas do século XX, quando foi originalmente descoberto por uma expedição paleontológica no Brasil. Contudo, em circunstâncias ainda não completamente esclarecidas, o fóssil foi levado para um museu na Alemanha, onde permaneceu longe dos olhos dos pesquisadores e entusiastas brasileiros por quase 80 anos.
+                    </p>
+                    
+                    <p>
+                        O Ubirajara jubatus foi descoberto em uma expedição na região nordeste. Seu nome, que significa "senhor da lança com penas", é uma homenagem à sua notável ornamentação, que inclui longas penas coloridas ao redor do pescoço. Essas penas, preservadas de maneira impressionante, revelam cores vibrantes, sugerindo uma possível função em exibições rituais ou comunicação intraspecífica.
+                    </p>
+                     
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Ubirajara/Ubirajara3.0.jpg">
+                    </article>
+                    
+                    <h2>O Retorno</h2>
+
+                    <p>
+                        A revelação da localização do Ubirajara ocorreu durante uma revisão meticulosa dos arquivos e registros de museus alemães por pesquisadores brasileiros, em colaboração com colegas alemães. O fóssil, que por anos havia sido desconhecido para a comunidade científica brasileira, foi finalmente identificado e sua origem revelada.
+                    </p>
+                    
+                    <p>
+                        A Dra. Maria Fernanda Costa, paleontóloga brasileira envolvida na descoberta, comentou sobre a emoção de encontrar o Ubirajara: "Foi como descobrir um tesouro perdido. O Ubirajara representa um capítulo fundamental na história dos dinossauros brasileiros, e tê-lo de volta é um marco extraordinário para a paleontologia do nosso país."
+                    </p>
+        
+                    <article class="imgPrincipal">
+                        <img src="Pictures/Ubirajara/Ubirajara_jubatus_skeletal-2.1.jpg" >
+                    </article>
+                    
+
+                    <p>
+                        O Museu Nacional do Brasil, agora responsável pelo fóssil, está preparando uma exposição especial para celebrar o retorno do Ubirajara. Esta exposição não apenas destacará as características únicas do dinossauro, mas também narrará a intrigante jornada internacional que o levou da terra brasileira para alemã e finalmente de volta ao seu país de origem.
+                    </p>
+        
+                    <p>
+                        O caso do Ubirajara destaca a importância da transparência e cooperação entre nações na pesquisa e preservação de fósseis significativos para a compreensão da história da Terra. Este dinossauro, que atravessou fronteiras e períodos de tempo, agora se torna um símbolo não apenas da vida pré-histórica, mas também da colaboração global na busca pelo conhecimento.
+                    </p>
+                </section>
+        </section>
+
+        <!--Decima Primeira Noticia-->
+        <section class="arqueologia">
+            <article class="noticias decimaPrimeiraNoticia">
+                <img src="Pictures/Icones/mammoth.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>A escultura de 25 mil anos feita de osso de Mamute</h2>
+                        <p >Arqueólogos descobriram uma escultura de 12,5 metros de extensão feita há 25 mil anos com ossos de mamute.</p>
+                        <a href="#" data-noticia ="noticia11">Ler Mais</a>  
+                    </div>
+                </div>
+            </article>
+            <article id="noticia11" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/Os_Mamutes/sn-mammoth.jpg">
+
+                <section class="informacoes">
+                    <h1>A escultura de ossos de Mamute</h1>
+                    
+                    <h2>O Achado</h2>
+                    
+                    <p>
+                        Arqueólogos recentemente fizeram uma descoberta extraordinária na cidade de Voronezh, na Rússia, onde uma escultura colossal feita de ossos de mamute foi desenterrada.
+                    </p>
+                    
+                    <p>
+                        Com uma extensão impressionante de 12,5 metros, a escultura é datada de aproximadamente 25 mil anos atrás, remontando à era do gelo.
+                    </p>
+                    
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Os_Mamutes/ossos-mamut.jpg" style="max-width: 670px; border-radius: 50px;">
+                        <div class="textoImagem">Estrutura achada em Voronezh<div>
+                    </article>
+                    
+                    <p>
+                        Os pesquisadores estão agora empenhados em decifrar os motivos que levaram os habitantes da era do gelo a criar essa estrutura monumental. Embora não seja a primeira escultura desse tipo descoberta no Leste Europeu, é a mais antiga até o momento.
+                    </p>
+        
+                    <p>
+                        Para erguer a escultura, foram utilizados centenas de ossos provenientes de aproximadamente 60 mamutes diferentes.
+                    </p>
+        
+                    <p>
+                        Alexander Pryor, pesquisador da Universidade de Exeter, expressou admiração pelo esforço necessário para reunir tal quantidade de ossos: "Pegar tantos ossos, de pelo menos 60 mamutes diferentes, é um desafio e tanto. Eles precisariam ser retirados de caças recentes, ou de carcaças mortas há tempos. De qualquer forma, ossos de mamute são muito pesados, especialmente os frescos. Carregá-los deve ter exigido um esforço enorme."
+                    </p>
+        
+                    <p>
+                        Pelo fato de os Mamute Lanoso (Mammuthus primigenius) principal especíe que vivia nas regiões mais frias, como a Europa, Ásia e América do Norte podia ter um peso médio em torno de 6.800 kg, mas alguns indivíduos podiam chegar a 12.000 kg ou mais em vida.
+                    </p>
+        
+                <article class="imgPrincipal borda">
+                        <img src="Pictures/Os_Mamutes/mamute2.jpg" style="max-width: 320px; border-radius: 50px;">
+                        <div class="textoImagem">PaleoArt de um Mamute<div></div>
+                    </article>
+        
+                    <p>
+                        Os cientistas, ao serem questionados sobre o propósito da escultura, especulam que o local pode ter sido usado para rituais, embora a natureza exata desses rituais ainda seja desconhecida.
+                    </p>
+        
+                    <h2>Os Vestígios</h2>
+
+                    <p>
+                        Os cientistas, já haviam conhecimento sobre o uso de ossos de mamutes para outras situações, desde a criação de vestimenta com a sua pele, a criação de cabanas, porém a criação de uma escultura  desse tamanho foi uma novidade.
+                    </p>
+        
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Os_Mamutes/mammoth-bone-shelter-ukraine-1392x816-1-1068x626.jpg" style="max-width:650px ; border-radius: 50px;">
+                        <div class="textoImagem">Cabana Humana preservada</div>
+                    </article>
+                    
+                    <p>
+                        Uma das hipóteses levantadas sugere que os buracos ao redor da estrutura poderiam ter sido utilizados para queimar alimentos ou ossos, ou mesmo para depositar resíduos e materiais excedentes de construções. O enigma em torno dessa descoberta continua a intrigar a comunidade científica, enquanto eles buscam desvendar os mistérios dos antigos habitantes de Voronezh.
+                    </p>
+            </section>
+        </section>
+
+        <!--Decima Segunda Noticia-->
+        <section class="historia">
+            <article class="noticias decimaSegundaNoticia">
+                <img src="Pictures/Icones/cave.png">
+                <div class="textosN">
+                    <div class="textosNoticias">
+                        <h2>O Abrigo da preguiças-gigante de 200 mil anos</h2>
+                        <p>Um Abrigo feito por uma  preguiça-gigante de 200 mil anos descoberta no Rio Grande do Sul</p>
+                        <a href="#" data-noticia ="noticia12">Ler Mais</a>   
+                    </div>
+                </div>
+            </article>
+            <article id="noticia12" class="conteudoNoticia">
+                <div class="iconeFechar">
+                    <img src="Pictures/Icones/delete.png">
+                </div>
+                <img src="Pictures/Toca/Toca2.jpg">
+                <section class="informacoes">
+                    <h1>O Abrigo de preguiça-gigante de 200 mil anos</h1>
+                    
+                    <p>
+                        Em uma revelação arqueológica impressionante, um abrigo de preguiça-gigante, conhecido como paleotoca, foi descoberto em Santana do Livramento, Rio Grande do Sul, datado de pelo menos 200.000 anos atrás. A Vinícola Almadén, que possui a propriedade onde a paleotoca foi encontrada, planeja incluir o local em roteiros turísticos devido à sua importância histórica e bem preservação.
+                    </p>
+                    
+                    <h2>Os animais</h2>
+        
+                    <p>
+                        Localmente conhecida como 'toca do tigre', a paleotoca foi inicialmente associada a um animal contemporâneo. No entanto, uma pesquisa conduzida por geólogos revelou marcas de garras de preguiça-gigante, indicando que o abrigo era, na verdade, uma estrutura utilizada por esses animais pré-históricos. Com três metros de altura, três de largura e 35 metros de profundidade, o abrigo torna-se uma das descobertas mais bem preservadas do país.
+                    </p>
+        
+                    <p>
+                        O estudo, liderado pelo geólogo Serlécio Guilherme Pinz, identificou marcas de garras e um formato de domo na paleotoca, sugerindo a presença de uma fêmea de preguiça-gigante com filhotes.
+                    </p>
+                    
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Toca/bicho_1.jpg" style="max-width:500px;">
+                        <div class="textoImagem">PaleoArt de um Preguiça-Gigante</div>
+                    </article>
+        
+                    <p>
+                        A análise também revelou a presença de uma segunda toca, atribuída a um tatu-gigante datado entre 10.000 e 30.000 anos. A pesquisa aponta para a importação de madeira para a construção do abrigo, indicando a sofisticação das práticas de construção dos animais pré-históricos.
+                    </p>
+        
+                    <article class="imgPrincipal">
+                        <img src="Pictures/Toca/the_glyptodon_by_gredinia_ddi2tq4-fullview.jpg" style="max-width:400px;">
+                        <div class="textoImagem">PaleoArt de um Tatu-Gigante</div>
+                    </article>
+                    
+                    <p>
+                        Os dados e análises da pesquisa serão cadastrados junto ao ICMBio/Cecav, responsável pelo registro de cavernas no Brasil. A paleotoca será classificada de acordo com seu estado de conservação e importância arqueológica.
+                    </p>
+                    
+                    <h2>Ponto turístico</h2>
+        
+                    <p>
+                        A Vinícola Almadén planeja criar um roteiro turístico especial, com estudos em andamento para garantir a preservação da estrutura e a segurança dos visitantes.
+                    </p>
+                    
+                    <p>
+                        A descoberta destaca a riqueza arqueológica da região Sul do Brasil, conhecida por abrigar paleotocas de animais pré-históricos. A expectativa é de que a inclusão desse abrigo de preguiça-gigante em roteiros turísticos ofereça aos visitantes a oportunidade única de testemunhar as marcas dos animais pré-históricos e compreender a história geológica da área.
+                    </p>
+        
+                    <article class="imgPrincipal borda">
+                        <img src="Pictures/Toca/Gruta.jpg" style="max-width:540px;">
+                        <div class="textoImagem">Paleotoca da Preguiça-Gigante</div>
+                    </article>
+            </section>
+        </section>
+
     </section>
     <footer id="rodape">
         <div><a href="index.html"><img src="Pictures/Logo.png" width="215" /></a></div>
